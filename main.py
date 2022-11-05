@@ -12,15 +12,15 @@ MY_LONG = -0.127758  # Your longitude
 # BONUS: run the code every 60 seconds.
 
 def mail_sender():
-    my_email = "carlos.mx.garmendia@gmail.com"
-    password = "eaaqrdhdscbbjfud"
+    my_email = "carlos@gmail.com"
+    password = "Añadir_Password"
 
     connection = smtplib.SMTP("smtp.gmail.com")
     port = 587
 
     connection.starttls()
     connection.login(user=my_email, password=password)
-    connection.sendmail(from_addr=my_email, to_addrs="campos_cg@hotmail.com", msg="Subject: Look at the sky\n\n Hey the iss is just over your head!!")
+    connection.sendmail(from_addr=my_email, to_addrs="campos@hotmail.com", msg="Subject: Look at the sky\n\n Hey the iss is just over your head!!")
     connection.close()
 
 def iss_position():
